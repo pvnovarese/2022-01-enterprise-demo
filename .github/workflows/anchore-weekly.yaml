@@ -7,11 +7,12 @@ on:
   #push:
   #  branches:
   #    - main
-  schedule:
+  - workflow_dispatch
+  - schedule:
     - cron: '38 10 * * 6'
-  workflow_dispatch:
-    branches:
-      - main
+  #workflow_dispatch:
+  #  branches:
+  #    - main
 
 env:
   ANCHORE_CLI_USER: ${{ secrets.ANCHORE_CLI_USER }}

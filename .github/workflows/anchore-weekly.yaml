@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Running mode'  
+        description: 'Manual Build'  
 
 env:
   ANCHORE_CLI_USER: ${{ secrets.ANCHORE_CLI_USER }}
